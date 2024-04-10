@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <!-- or <script src="script1.js" defer></script> -->
+    <!-- or -->
+    <!-- <script>
+        console.log("hello");
+    </script> -->
+</head>
+
+<body>
+    <div>
+        <h1 id="e1"><b>first DOM Manipulation</b></h1>
+    </div>
+
+    <div>
+        <h1>second DOM Manipulation</h1>
+    </div>
+
+    <h1 class="head2"><i>second heading</i></h1>
+    <h1 class="head2">third heading</h1>
+    <button>click</button>
+    <p></p>
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+        <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis excepturi, ipsam exercitationem
+            explicabo aperiam alias aliquam quidem fugit officia maiores voluptates voluptate unde itaque nemo cum,
+            culpa facere veniam consequatur.</p> -->
+    </div>
+    <script>
+        const parentElements = document.querySelectorAll('.parent');
+        console.log(parentElements);
+        console.log(parentElements[0].children);
+    </script>
+    <!-- <script src="script1.js"></script> -->
+</body>
+
+</html>
